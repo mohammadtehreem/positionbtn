@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+      }
+      div {
+        display: none;
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        position: absolute;
+        left: 45%;
+        top: 45%;
+      }
+      button {
+        position: relative;
+        left: 50%;
+        top: 50%;
+      }
+
+      button:active + div {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Read info</button>
+    <div>This is info</div>
+  </body>
+</html>
